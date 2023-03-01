@@ -11,6 +11,9 @@ header ul.nav a{
 header ul.nav li:nth-of-type(2) a{
     font-size: 0.7rem;
 }
+.lip-mobile-logo{
+    width: 50px;
+}
 /* wrapper */
 .wrapper{
     margin-top: 70px;
