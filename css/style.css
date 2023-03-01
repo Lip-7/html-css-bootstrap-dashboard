@@ -14,6 +14,9 @@ header ul.nav li:nth-of-type(2) a{
 .lip-mobile-logo{
     width: 50px;
 }
+.lip-bg-search{
+    background-color: #99919142;
+}
 /* wrapper */
 .wrapper{
     margin-top: 70px;
