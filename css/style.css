@@ -44,13 +44,27 @@ transform: translateX();
 }
 
 /* main-content */
-/* main-side */
+/* main-aside */
 .offcanvas-size-xl {
     --bs-offcanvas-width: min(95vw, 600px) !important;
 }
-
-
-
+.lip-bg-bread{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1px 8px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#bread-crumb nav{
+    --bs-breadcrumb-divider: '>>';
+    color: white;
+}
+#bread-crumb .breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
+#bread-crumb ul{
+    list-style: none;
+}
 
 /* media */
 @media screen and (min-width: 768px){
