@@ -1,0 +1,13 @@
+header{
+    height: 70px;
+}
+.wrapper{
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+
+}
+#sidebar{
+    width: 150px;
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+}
