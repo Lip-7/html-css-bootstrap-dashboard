@@ -1,13 +1,26 @@
+/* header */
 header{
     height: 70px;
 }
+header ul.nav a{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    text-align: center;
+}
+header ul.nav li:nth-of-type(2) a{
+    font-size: 0.7rem;
+}
+/* wrapper */
 .wrapper{
     margin-top: 70px;
     height: calc(100vh - 70px);
 
 }
+/* sidebar */
 #sidebar{
     width: 150px;
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
 }
+/* main-content */
