@@ -19,8 +19,30 @@ header ul.nav li:nth-of-type(2) a{
 }
 /* sidebar */
 #sidebar{
-    width: 150px;
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
 }
+#sidebar a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar-hover{
+    position: relative;
+}
+.sidebar-hover:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    filter: brightness(100);
+}
+
 /* main-content */
+
+
+
+
+/* media */
+@media screen and (min-width: 768px){
+    /* side-bar */
+    #sidebar{
+        width: 150px;
+    }
+}

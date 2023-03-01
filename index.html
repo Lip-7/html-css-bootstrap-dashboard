@@ -33,7 +33,20 @@
         </div>
     </header>
     <div class="wrapper d-flex">
-        <nav id="sidebar" class="flex-shrink-0 h-100 text-white"></nav>
+        <nav id="sidebar" class="flex-shrink-0 h-100 text-white">
+            <div class="container-fluid d-flex flex-column justify-content-between h-100">
+                <div class="side-top d-flex justify-content-center">
+                    <ul class="nav flex-column">
+                        <li class="p-2 mt-2 sidebar-hover"><a href="./index.html"><i class="fa-solid fa-house"></i><span class="d-md-inline d-none ms-2">Home</span></a></li>
+                        <li class="p-2 sidebar-hover"><a href="#"><i class="fa-solid fa-chart-simple"></i><span class="d-md-inline d-none ms-2">Stats</span></a></li>
+                        <li class="p-2 sidebar-hover"><a href="#"><i class="fa-solid fa-signal"></i><span class="d-md-inline d-none ms-2">Signals</span></a></li>
+                    </ul>
+                </div>
+                <div class="side-settings d-flex justify-content-center mb-3">
+                    <span class="sidebar-hover p-2"><i class="fa-solid fa-gear"></i><span class="d-md-inline d-none ms-2">Admin</span></span>
+                </div>
+            </div>
+        </nav>
         <main class="flex-grow-1 overflow-y-auto h-100">
             <div class="top-aside bg-primary text-white">
                 <div class="container-fluid"></div>
