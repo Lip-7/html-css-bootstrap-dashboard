@@ -32,7 +32,7 @@
                   <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link text-secondary" href="#" type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom"><i class="fa-solid fa-bell text-warning"></i></a>
+                  <a class="nav-link text-secondary" href="#" type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Tooltip on bottom"><i class="fa-solid fa-bell text-warning"></i></a>
                 </li>
               </ul>
         </div>
@@ -54,7 +54,78 @@
         </nav>
         <main class="flex-grow-1 overflow-y-auto h-100">
             <div class="top-aside bg-primary text-white">
-                <div class="container-fluid"></div>
+                <div class="container-fluid">
+                    <div class="new-studend-add d-flex align-items-center">
+                        <span>Nuovo Studente</span>
+                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">+</a>
+                        <div class="offcanvas offcanvas-size-xl offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <form>
+                                <div class="row">
+                                    <div class="col-6 my-3">
+                                        <label for="input-fname" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="input-fname">
+                                    </div>
+                                    <div class="col-6 my-3">
+                                        <label for="input-lname" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="input-lname">
+                                    </div>
+                                    <div class="col-6 my-3">
+                                        <label for="user-email" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="email" class="form-control" id="user-email">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-3">
+                                        <label for="user-password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="user-password">
+                                    </div>
+                                    <div class="col-12 my-3">
+                                        <label for="user-address" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="user-address">
+                                    </div>
+                                    <div class="col-6 my-3">
+                                        <label for="user-city" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="user-city">
+                                    </div>
+                                    <div class="col-3 my-3 input-group w-auto d-flex flex-column">
+                                        <label for="user-state" class="form-label">Stato</label>
+                                        <button id="user-state" class="rounded-2 btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Scegli...</button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Filippine</a></li>
+                                          <li><a class="dropdown-item" href="#">Messico</a></li>
+                                          <li><a class="dropdown-item" href="#">Napoli</a></li>
+                                        </ul>
+                                      </div>
+                                    <div class="col-2 my-3">
+                                        <label for="user-cap" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="user-cap">
+                                    </div>
+                                    <div class="col-12 my-3">
+                                        <label for="user-img" class="form-label">CAP</label>
+                                        <input type="file" class="form-control" id="user-img">
+                                    </div>
+                                    <div class="col-12 my-3 mb-4">
+                                        <div class="input-group d-flex align-items-center">
+                                            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" required>
+                                            <label for="safe-check" class="ms-2">Seleziona per proseguire</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <button class="rounded btn btn-primary me-2" type="submit">Salva</button>
+                                        <button class="rounded btn btn-warning" type="reset">Svuota</button>
+                                    </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                </div>
             </div>
             <section class="main-content container-fluid">
                 <div class="row">

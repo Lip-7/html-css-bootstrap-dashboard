@@ -17,6 +17,9 @@ header ul.nav li:nth-of-type(2) a{
 .lip-bg-search{
     background-color: #99919142;
 }
+.custom-tooltip{
+transform: translateX();
+}
 /* wrapper */
 .wrapper{
     margin-top: 70px;
@@ -41,6 +44,10 @@ header ul.nav li:nth-of-type(2) a{
 }
 
 /* main-content */
+/* main-side */
+.offcanvas-size-xl {
+    --bs-offcanvas-width: min(95vw, 600px) !important;
+}
 
 
 
