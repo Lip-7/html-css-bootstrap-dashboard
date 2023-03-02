@@ -1,8 +1,12 @@
+/* general */
+*{
+    font-family: 'Roboto', sans-serif;
+}
 /* header */
 header{
     height: 70px;
 }
-header ul.nav a{
+header ul.nav>li>a{
     width: 20px;
     height: 20px;
     padding: 0;
@@ -13,6 +17,7 @@ header ul.nav li:nth-of-type(2) a{
 }
 .lip-mobile-logo{
     width: 50px;
+    min-width: 36px;
 }
 .lip-bg-search{
     background-color: #99919142;
@@ -34,6 +39,7 @@ transform: translateX();
 #sidebar a{
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 .sidebar-hover{
     position: relative;
