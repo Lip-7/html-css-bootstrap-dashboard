@@ -51,9 +51,6 @@ transform: translateX();
 
 /* main-content */
 /* main-aside */
-/* .offcanvas-size-xl {
-    --bs-offcanvas-width: min(95vw, 600px) !important;
-} */
 .new-studend-add .offcanvas{
     width: 100%;
 }
@@ -74,6 +71,26 @@ transform: translateX();
 #bread-crumb ul{
     list-style: none;
 }
+/* table */
+#table-classes table th,
+#table-classes table td{
+    width: 7rem;
+    text-align: center;
+}
+#table-classes table th:first-child,
+#table-classes table tr{
+    width: auto;
+    text-align: left;
+}
+#table-classes table td  i{
+    border: 1px solid grey;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
 
 /* media */
 @media screen and (min-width: 768px){
