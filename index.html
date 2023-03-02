@@ -37,10 +37,9 @@
                 <li class="nav-item mx-2 dropdown">
                   <a class="nav-link text-secondary" href="#" role="button" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-placement="bottom" aria-expanded="false"><i class="fa-solid fa-bell text-warning"></i></a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
                   </ul>
                 </li>    
               </ul>
@@ -63,11 +62,11 @@
         </nav>
         <main class="flex-grow-1 overflow-y-auto h-100">
             <div class="top-aside bg-primary text-white">
-                <div class="container-fluid d-lg-flex">
-                    <div class="new-studend-add d-flex align-items-center py-4">
+                <div class="container-fluid d-lg-flex align-items-start justify-content-between py-3">
+                    <div class="new-studend-add d-flex align-items-center py-2 order-lg-1">
                         <span class="me-3">Nuovo Studente</span>
                         <a class="btn btn-primary border-1 border-light" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-plus"></i></a>
-                        <div class="offcanvas offcanvas-size-xl offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
                               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -134,7 +133,7 @@
                             </div>
                           </div>
                     </div>
-                    <div id="bread-crumb" class="pb-2">
+                    <div id="bread-crumb" class="pb-2 order-lg-0">
                         <div id="bc-title" class="d-flex align-items-center">
                             <h1 class="h2 me-2">Boolean</h1>
                             <span class="rounded-4 lip-bg-bread">Piano Blaze</span>
@@ -142,14 +141,18 @@
                         <nav>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a class="rounded-4 lip-bg-bread" href="#">3 app</a></li>
-                                <li class="breadcrumb-item active d-lg-none" aria-current="page"><span class="rounded-4 lip-bg-bread">+</span></li>
-                                <ul class="d-none d-lg-flex breadcrumb-item">
+                                <li class="breadcrumb-item active d-xl-none" aria-current="page"><span class="rounded-4 lip-bg-bread">+</span></li>
+                                <ul class="d-none d-xl-flex breadcrumb-item small">
                                     <li class="rounded-4 lip-bg-bread mx-1">Boolean mobile app</li>
                                     <li class="rounded-4 lip-bg-bread mx-1">Boolean web app</li>
                                     <li class="rounded-4 lip-bg-bread mx-1">Boolean blog app</li>
                                 </ul>
                             </ol>
                         </nav>
+                    </div>
+                    <div id="online-students">
+                        <h3 class="h5">Studenti online negli ultimi 30 minuti</h3>
+                        <h2>125</h2>
                     </div>
                 </div>
             </div>

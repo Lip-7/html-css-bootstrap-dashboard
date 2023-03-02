@@ -12,7 +12,7 @@ header ul.nav>li>a{
     padding: 0;
     text-align: center;
 }
-header ul.nav li:nth-of-type(2) a{
+header ul.nav>li:nth-of-type(2) a{
     font-size: 0.7rem;
 }
 .lip-mobile-logo{
@@ -51,8 +51,11 @@ transform: translateX();
 
 /* main-content */
 /* main-aside */
-.offcanvas-size-xl {
+/* .offcanvas-size-xl {
     --bs-offcanvas-width: min(95vw, 600px) !important;
+} */
+.new-studend-add .offcanvas{
+    width: 100%;
 }
 .lip-bg-bread{
     background-color: rgba(0, 0, 0, 0.2);
@@ -77,5 +80,10 @@ transform: translateX();
     /* side-bar */
     #sidebar{
         width: 150px;
+    }
+}
+@media screen and (min-width: 992px){
+    .new-studend-add .offcanvas{
+        width: 50%;
     }
 }
